@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark-gray: rgb(75, 73, 73);
+  --yellow: rgb(194, 135, 8);
+  --light-gray: rgb(136, 135, 135);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#calculator {
+  border: 2px solid black;
+  box-shadow: 4px 4px 10px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  height: 80vh;
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "display display display display"
+    "clear clear clear divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+}
+
+#display {
+  font-size: 50px;
+  border-radius: 25px;
+  background-color: black;
+  grid-area: display;
+}
+
+#clear {
+  font-size: 50px;
+  grid-area: clear;
+}
+
+#divide {
+  font-size: 50px;
+  grid-area: divide;
+}
+
+#seven {
+  font-size: 50px;
+  grid-area: seven;
+}
+
+#eight {
+  font-size: 50px;
+  grid-area: eight;
+}
+
+#nine {
+  font-size: 50px;
+  grid-area: nine;
+}
+
+#multiply {
+  font-size: 50px;
+  grid-area: multiply;
+}
+
+#four {
+  font-size: 50px;
+  grid-area: four;
+}
+
+#five {
+  font-size: 50px;
+  grid-area: five;
+}
+
+#six {
+  font-size: 50px;
+  grid-area: six;
+}
+
+#subtract {
+  font-size: 50px;
+  grid-area: subtract;
+}
+
+#one {
+  font-size: 50px;
+  grid-area: one;
+}
+
+#two {
+  font-size: 50px;
+  grid-area: two;
+}
+
+#three {
+  font-size: 50px;
+  grid-area: three;
+}
+
+#add {
+  font-size: 50px;
+  grid-area: add;
+}
+
+#zero {
+  font-size: 50px;
+  border-bottom-left-radius: 25px;
+  grid-area: zero;
+}
+
+#decimal {
+  font-size: 50px;
+  grid-area: decimal;
+}
+
+#equals {
+  font-size: 50px;
+  border-bottom-right-radius: 25px;
+  grid-area: equals;
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.light-gray {
+  background-color: var(--light-gray);
+}
